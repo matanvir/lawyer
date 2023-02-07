@@ -1,0 +1,380 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*header start*/
+.nav-link{
+	color: #204f87;
+	font-weight: 600;
+}
+.nav-link:hover{
+	color: #082a52;
+}
+/*header end*/
+
+/*banner start*/
+.banner{
+	background-image: url(../image/banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.banner h1{
+	font-size: 96px;
+	font-weight: 700px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+.icon{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #fff;
+	font-size: 20px;
+	animation: updown 1s linear infinite;
+	animation-direction: alternate;
+}
+.hg{
+	min-height: 91vh;
+	align-items: center;
+}
+@keyframes updown{
+	0%{
+		top: 70%;
+	}
+	100%{
+		top: 75%;
+	}
+}
+/*banner end*/
+
+/*identify start*/
+.identify{
+	padding: 115px 0px 200px 0px;
+}
+.identify span{
+	display: block;
+	height: 2px;
+	width: 50px;
+	background-color: #f05428;
+	margin-block: 15px;
+}
+.identify h1{
+	color: #204f87;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 35px
+}
+.identify p{
+	font-size: 16px;
+	color: #b0b0b1;
+	margin-top: 20px;
+}
+/*identify end*/
+
+/*whatwedo start*/
+.whatwedo{
+	background-image: url(../image/whatbg.png);
+	background-color: #f7f8f8;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-size: 60%;
+	padding: 80px 0;
+}
+.whatwedo span{
+	margin: auto;
+	display: block;
+	height: 5px;
+	width: 50px;
+	background-color: #f05428;
+	margin-block: 15px;
+}
+.whatwedo h1{
+	color: #204f87;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 35px;
+	text-align: center;
+	margin: 20px 0px 85px 0px;
+
+}
+.item{
+	position: relative;
+}
+.item img{
+	width: 100%;
+
+}
+.item h1{
+	width: 70%;
+	position: absolute;
+	left: 50%;
+	top: 53%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 30px;
+	opacity: 0;
+	transition: .5s all ease-in-out;
+}
+.item:hover h1{
+	opacity: 1;
+	top: 50%;
+}
+.item i{
+	position: absolute;
+	left: 48%;
+	transform: translateX(-50%);
+	top: 80%;
+	color: #fff;
+	opacity: 0;
+	transition: 0.5s all ease-in-out;
+}
+.item::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 0%;
+	transition: 0.3s all ease-in-out;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,28377e+0&0+1,1+100 */
+	background: -moz-linear-gradient(top,  rgba(40,55,126,0) 0%, rgba(40,55,126,0) 1%, rgba(40,55,126,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(40,55,126,0) 0%,rgba(40,55,126,0) 1%,rgba(40,55,126,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(40,55,126,0) 0%,rgba(40,55,126,0) 1%,rgba(40,55,126,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0028377e', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+}
+.item:hover i{
+	opacity: 1;
+	left: 50%;
+}
+.item:hover::before{
+	height: 100%;
+}
+/*whatwedo end*/
+/*attorney start*/
+.attorney{
+	background-image: url(../image/attorneybg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	padding: 200px 0;
+}
+.heading{
+	margin-top: 35%;
+}
+.heading span{
+	display: block;
+	height: 5px;
+	width: 50px;
+	background-color: #f05428;
+	margin-block: 15px;
+}
+.heading h1{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 35px;
+	margin: 20px 0px 30px 0px;
+}
+.heading p{
+	color: #929dcf;
+	font-size: 16px;
+	margin-bottom: 50px;
+}
+.heading .seemore{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #f2622c;
+	font-weight: 700;
+	transition: 0.3s;
+}
+.seemore:hover{
+	color: white;
+}
+.item_attorney{
+	position: relative;
+}
+.item_attorney img{
+	width: 100%;
+}
+.item_attorney h1{
+	position: absolute;
+	bottom: 55px;
+	left: 30px;
+	color: #fff;
+	font-size: 25px;
+	opacity: 0;
+	transition: 0.5s all ease-in-out;
+}
+.item_attorney:hover h1{
+	opacity: 1;
+/*	top: 50%;*/
+}
+.item_attorney::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50%;
+	transition: 0.3s all ease-in-out;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,28377e+0&0+1,1+100 */
+	background: -moz-linear-gradient(top,  rgba(40,55,126,0) 0%, rgba(40,55,126,0) 1%, rgba(40,55,126,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(40,55,126,0) 0%,rgba(40,55,126,0) 1%,rgba(40,55,126,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(40,55,126,0) 0%,rgba(40,55,126,0) 1%,rgba(40,55,126,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0028377e', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+}
+.item_attorney:hover::before{
+	height: 100%;
+}
+/*attorney end*/
+
+/*languae start*/
+.language{
+	padding: 125px 0px 145px;
+}
+.language span{
+	margin: auto;
+	display: block;
+	height: 5px;
+	width: 50px;
+	background-color: #f05428;
+	margin-block: 15px;
+}
+.thelang{
+	color: #204f87;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 35px;
+	text-align: center;
+	margin: 20px 0px 85px 0px;
+}
+.language_sec{
+	width: 85%;
+}
+.language_sec h1{
+	color: #204f87;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 25px;
+	margin: 20px 0px 25px 0px;
+	line-height: 20px;
+}
+.language_sec p{
+	color: #b1b0b1;
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 35px
+}
+.readmore{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #f2622c;
+	font-weight: 800;
+	transition: 0.3s;
+}
+.readmore:hover{
+	color: #28377e;
+}
+/*languae end*/
+
+/*contact start*/
+.contact{
+	background-color: #28377e;
+	padding: 100px 0;
+}
+.contact span{
+	margin: auto;
+	display: block;
+	height: 5px;
+	width: 50px;
+	background-color: #f05428;
+	margin-block: 15px;
+}
+.contact h1{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 35px;
+	text-align: center;
+	margin: 20px 0px 25px 0px;
+	line-height: 20px;
+}
+.form-group{
+	padding-bottom: 20px;
+}
+.form-control{
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid dimgrey;
+	border-radius: 0;
+	color: #fff !important;
+}
+.form-control:focus{
+	background-color: transparent;
+	border: 1px solid #7886c5;
+	outline: none;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+.btn-custom{
+	background-color: #f15b2a;
+	color: #fff;
+	padding: 15px 60px;
+	border-radius: 0;
+	font-weight: 700;
+	margin-top: 40px;
+}
+.btn-custom:hover{
+	background-color: dimgrey;
+	color: #fff;
+}
+input::placeholder{
+	color: dimgrey !important;
+}
+input:placeholder{
+	color: dimgrey !important;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: dimgrey !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: pink;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: dimgrey !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: dimgrey !important;
+}
+/*contact end*/
+
+/*footer start*/
+footer{
+	background-color: #0c1234;
+	padding: 30px 0;
+}
+footer p{
+	color: #b1b7dd;
+}
+footer ul{
+	list-style: none;
+
+}
+footer ul li{}
+footer ul li a{
+	color: #b1b7dd;
+	padding: 0px 10px;
+	transition: 0.3s;
+}
+footer ul li a:hover{
+	color: wheat;
+}
+
+/*footer end*/
+
+
